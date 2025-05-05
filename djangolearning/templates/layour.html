@@ -1,4 +1,4 @@
-{% load static %}
+{% load static tailwind_tags %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="{% static 'intro.css'%}">
     <title>{% block title %} default value {% endblock %}</title>
+    		{% tailwind_css %}
+
   </head>
   <body>
     <h1>this is {% block name %}default file{% endblock %} file</h1>
   </body>
 </html>
+
